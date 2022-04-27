@@ -15,7 +15,6 @@ with open('config.json') as config_file:
 
 repository_list = config['repository_list']
 find_and_replace_list = config['find_and_replace_list']
-# file_list = config['file_list']
 commit_message = config['commit_message']
 base_branch = config['base_branch']
 repositories_directory = config['repositories_directory']

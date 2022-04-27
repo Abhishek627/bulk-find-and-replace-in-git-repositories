@@ -19,11 +19,6 @@
       "cron(0 0 20 ? * MON,TUE,WED,THU,FRI *)"
     ]
   ],
-  "file_list": [
-    "infrastructure/stack-scaling-dev.yml",
-    "infrastructure/stack-scaling-int.yml",
-    "infrastructure/stack-scaling-test.yml"
-  ],
   "commit_message": "{} Changed autoscaling schedule for dev, int and test environments",
   "base_branch": "develop",
   "repositories_directory": "repositories/",
