@@ -47,7 +47,7 @@ for repository in repository_list:
                 file_list.append(os.path.join(root, file))
     for checked_file in file_list:
         path_to_repository_file = os.path.join(
-            "/Users/shabhish/Documents/rainier-github/bulk-find-and-replace-in-git-repositories", checked_file)
+            os.path.dirname(os.path.abspath(__file__)), checked_file)
         repo_file = pathlib.Path(path_to_repository_file)
         print(repo_file, repo_file.exists())
         if repo_file.exists():
