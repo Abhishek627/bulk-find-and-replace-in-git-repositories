@@ -27,7 +27,7 @@
   "commit_message": "{} Changed autoscaling schedule for dev, int and test environments",
   "base_branch": "develop",
   "repositories_directory": "repositories/",
-  "repository_author_name": "Omer Karabacak",
+  "repository_author_name": "Abhishek Sharma",
   "repository_author_email": "email@example.com",
   "ssh_key": "~/.ssh/id_rsa"
 }
