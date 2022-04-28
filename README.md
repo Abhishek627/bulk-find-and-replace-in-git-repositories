@@ -100,3 +100,8 @@ python create_PR.py
 
 This will create PR from base_branches to target_branch for each repo added in config.json
 Update github-username and github-password in env variable and update the GITHUB_BASE_URL accordingly.
+
+## KNOWN ISSUES:
+Doesn't commit to same branch again if it is present already. For example, if I want to do more changes in same branch again, it doesn't commit the changes.
+
+To overcome this, first commit the repo changes. Then make base branch in config.json same as repository list branch and run findandreplace.py again.
