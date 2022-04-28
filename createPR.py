@@ -6,7 +6,7 @@ result_list = []
 GITHUB_BASE_URL = "https://github.com/"
 
 
-def delete_branch(githubObj, repo, branch="new_branch", ):
+def delete_branch(githubObj, repo, branch="new_branch" ):
     github_repo = githubObj.get_repo(repo)
     print("Branch to be deleted {} for repo {}:".format(branch, repo))
     try:
@@ -72,11 +72,12 @@ def main():
                        timeout=30, retry=2)
 
     repository_list = config['repository_list']
+    base_branch = config['base_branch']
     for repo in repository_list:
         repo_name = repo[1].replace(
             "git@", "https//").replace(".git", "")
 
-        iterate_repo(githubObj, repo_name, repo[0])
+        iterate_repo(githubObj, repo_name, repo[0], base_branch)
         # delete_branch(githubObj, repo_name, repo[0])
 
 
